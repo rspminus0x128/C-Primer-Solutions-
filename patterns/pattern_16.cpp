@@ -1,21 +1,27 @@
+// ****1
+// ***22
+// **333
+// *4444
+// 55555
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
+
     int i, j, k;
-    int n =5;
+    int n = 5;
 
     for (i = 1; i <= n; i++)
     {
-
-        for (j = 1; j < i; j++)
+        for (j = 1; j < n+1-i; j++)
         {
-            cout << " ";
+            cout << "*";
         }
-        for (k = 1; k <= n + 1 - i; k++)
+        for (k = 1; k <= i; k++)
         {
-            cout << "* ";
+            cout << i;
         }
         cout << endl;
     }
