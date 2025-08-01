@@ -1,22 +1,24 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main(){
+int main()
+{
 
-    int i,j,k;
+    int i, j, k;
     int n = 5;
 
-    for(i =1;i<=n;i++)
+    for (i = 1; i <= n; i++)
     {
-        for(j =1; j<=n-i; j++)
+        for (j = 1; j <= n - i; j++)
         {
             cout << " ";
         }
-        for(k = 1; k <=i;k++){
+        for (k = 1; k <= i; k++)
+        {
             cout << " *";
         }
-        cout <<endl;
+        cout << endl;
     }
-    
+
     return 0;
 }
