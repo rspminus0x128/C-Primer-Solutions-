@@ -1,8 +1,8 @@
-// ABCDE
-// ABCD*
-// ABC**
-// AB***
-// A****
+// #*#*#
+// #*#*
+// #*#
+// #*
+// #
 
 #include <iostream>
 using namespace std;
@@ -10,24 +10,25 @@ using namespace std;
 int main()
 {
 
-    int i, j, k;
+    int i, j;
     int n = 5;
 
-    for (i = n; i >= 1; i--)
+    for (int i = 1; i <= 5; i++)
     {
-        for (j = 1; j <= 5; j++)
+        for (j = 1; j <= n + 1 - i; j++)
         {
-            if (j > i)
+            if (j % 2 == 0)
             {
                 cout << "*";
             }
             else
             {
-                cout << char(j + 64);
+                cout << "#";
             }
         }
         cout << endl;
     }
     cout << endl;
+
     return 0;
 }

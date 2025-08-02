@@ -1,22 +1,27 @@
- // EEEEE
- // DDDD*
- // CCC**
- // BB***
- // A****
+// EEEEE
+// DDDD*
+// CCC**
+// BB***
+// A****
 
- #include <iostream>
+#include <iostream>
 using namespace std;
 
-int main (){
-    int i,j,k;
+int main()
+{
+    int i, j, k;
     int n = 5;
 
-    for (i = n; i>=1; i--){
-        for (j =1; j<=5; j++){
-            if (j>i){
-              cout << "*";
+    for (i = n; i >= 1; i--)
+    {
+        for (j = 1; j <= 5; j++)
+        {
+            if (j > i)
+            {
+                cout << "*";
             }
-            else{
+            else
+            {
                 cout << char(i + 64);
             }
         }
@@ -25,5 +30,4 @@ int main (){
     cout << endl;
 
     return 0;
-
 }
